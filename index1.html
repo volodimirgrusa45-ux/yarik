@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моє портфоліо</title>
+
+    <title>Tap Tap</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Моє портфоліо</h1>
+
+    <div class="game">
+
+        <h1>⚡ TAP TAP</h1>
+
+        <div class="score">
+            🪙 <span id="score">0</span>
+        </div>
+
+        <button id="tapButton" class="tap-button">
+            TAP!
+        </button>
+
+        <p class="power">
+            За тап: +<span id="power">1</span>
+        </p>
+
+        <div class="shop">
+            <h2>🛒 Магазин</h2>
+
+            <button id="upgradeButton" class="upgrade">
+                ⬆️ Покращити тап — 25 🪙
+            </button>
+        </div>
+
+    </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>

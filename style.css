@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #15152b, #302060);
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    width: 380px;
+    padding: 30px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 25px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.score {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.score span {
+    font-weight: bold;
+}
+
+.tap-button {
+    width: 220px;
+    height: 220px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    color: white;
+
+    background: linear-gradient(145deg, #8b5cf6, #ec4899);
+
+    box-shadow:
+        0 15px 0 #6d28d9,
+        0 25px 35px rgba(0, 0, 0, 0.4);
+
+    transition: 0.1s;
+}
+
+.tap-button:hover {
+    transform: scale(1.04);
+}
+
+.tap-button:active {
+    transform: translateY(10px) scale(0.97);
+
+    box-shadow:
+        0 5px 0 #6d28d9,
+        0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.power {
+    margin-top: 15px;
+    color: #ddd;
+}
+
+.shop {
+    margin-top: 35px;
+}
+
+.shop h2 {
+    margin-bottom: 15px;
+}
+
+.upgrade {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background: white;
+    color: #222;
+
+    transition: 0.2s;
+}
+
+.upgrade:hover {
+    transform: translateY(-2px);
+    background: #eee;
+}
+
+.upgrade:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.plus {
+    position: fixed;
+
+    pointer-events: none;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    color: #ffd700;
+
+    animation: fly 0.8s forwards;
+}
+
+@keyframes fly {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100px) scale(1.4);
+    }
+}
+
+
